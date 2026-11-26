@@ -1,0 +1,6 @@
+node_modules/
+.npm-cache/
+frontend/dist/
+__pycache__/
+*.db-wal
+*.db-shm

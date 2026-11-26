@@ -1,0 +1,25 @@
+.topic-actions, .action-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.topic-head > *, .topic-body > * { min-width: 0; }
+.topic-card { overflow-wrap: anywhere; }
+.topic-badges .badge { white-space: normal; }
+.topic-body p + p { margin-top: 9px; }
+.syllabus-controls, .salary-controls { margin-bottom: 12px; }
+.library-controls > label { min-width: 0; max-width: 100%; }
+.library-controls select { max-width: 100%; }
+.salary-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+.salary-controls label, .error-fields label { display: grid; gap: 3px; color: var(--text-soft); font-size: 13px; }
+.salary-controls label.chk-label { display: flex; }
+.error-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.error-fields button { justify-self: start; }
+.error-fields input, .error-fields select, .error-fields textarea { width: 100%; }
+.file-control:focus-within { outline: 3px solid var(--primary); outline-offset: 3px; }
+.timer-actions { justify-content: center; }
+.cycle-block { display: grid; gap: 4px; text-align: left; color: var(--text-soft); font-family: var(--font); }
+.mastered-note { color: var(--text-muted); }
+.operation-status { margin: 12px 0 0; overflow-wrap: anywhere; }
+
+@media (max-width: 570px) {
+  .sim-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .sim-row > input { grid-row: 2; grid-column: 1 / -1; width: 100%; }
+  .error-fields { grid-template-columns: 1fr; }
+}
